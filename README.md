@@ -1,6 +1,6 @@
 # myapp
 
-A new Flutter project.
+This is my first test flutter app, man this was alot to change
 
 ## Getting Started
 
