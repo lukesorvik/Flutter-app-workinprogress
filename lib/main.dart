@@ -14,13 +14,14 @@ class myApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(title: Text("hi mom")),
-      body: Container(
-        child: const Text("what the hell"),
-        margin: const EdgeInsets.all(100),
-        padding: EdgeInsets.all(10),
-        color: Colors.red,
-        width: 100,
-        height: 100,
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Flexible(child: const Icon(Icons.abc_sharp)),
+          Expanded(flex: 4, child: Icon(Icons.ac_unit_rounded)),
+          Icon(Icons.access_alarm)
+        ],
       ),
     ));
   }
